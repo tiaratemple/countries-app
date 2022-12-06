@@ -13,6 +13,7 @@ export const potentialCountriesSlice = createSlice({
   },
   reducers: {
     setPotentialCountries: (state, action) => {
+      console.log(action.payload);
       state.value = action.payload;
     },
     deletePotentialCountries: (state) => {

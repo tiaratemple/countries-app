@@ -10,6 +10,7 @@ const OptionDisplay = () => {
   return (
     <div className="stack">
       {currentPotentials.map((e, i) => {
+        console.log(e.name);
         return (
           <h2
             key={e.name.official}
@@ -18,7 +19,7 @@ const OptionDisplay = () => {
               dispatch(setDisplayCountry(currentPotentials[i]));
             }}
           >
-            {e.name.commom}
+            {e.name.common}
           </h2>
         );
       })}

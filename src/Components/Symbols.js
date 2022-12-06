@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectDisplay } from "../redux/slices/displayCountrySlice";
+import { current } from "@reduxjs/toolkit";
 
 const Symbols = () => {
   let currentDisplay = useSelector(selectDisplay);
